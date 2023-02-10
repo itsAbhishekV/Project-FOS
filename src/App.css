@@ -1,0 +1,13 @@
+body{
+    font-family: 'Poppins';
+    font-weight: bold;
+    user-select: none;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+*{
+    box-sizing: border-box;
+}
