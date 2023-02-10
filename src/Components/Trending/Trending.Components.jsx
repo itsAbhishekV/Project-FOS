@@ -15,7 +15,6 @@ const Trending = () => {
             </div>
             <div className='trendingsection'>
                 <h2 className='trendingheader'>What's happening</h2>
-                <div>
                 {
                     testdata.map(element => {
                         return (
@@ -27,6 +26,8 @@ const Trending = () => {
                         )
                     })
                 }
+                <div className='showmore'>
+                    <span className="trendiv" style={{color: "#0099ff"}}>Show more</span>
                 </div>
             </div>
             <div>
