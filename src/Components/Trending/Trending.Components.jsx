@@ -9,7 +9,7 @@ const Trending = () => {
         <div className='trencont'>
             <div className='input'>
                 <label className='searchicon' for="mainsearch">
-                    <SearchIcon sx={{color: '#71767b'}}/>
+                    <SearchIcon sx={{color: '#71767b'}} />
                 </label>
                 <input className='thotSearch' name="mainSearch" id="mainsearch" type='text' placeholder="Search FOS..."></input>
             </div>
