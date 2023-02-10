@@ -46,10 +46,14 @@
     justify-content: space-evenly;
 }
 .like:hover{
-    color: rgb(186, 47, 47);
+    color: rgb(254,1,154);
     cursor: pointer;
 }
 .comment:hover{
-    color: rgb(68, 68, 170);
+    color: #0096FF;
+    cursor: pointer;
+}
+.follow:hover{
+    color: white;
     cursor: pointer;
 }
