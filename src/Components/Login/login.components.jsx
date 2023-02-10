@@ -3,7 +3,7 @@ import './login.styles.css'
 
 const LoginComponent = () => {
     return (
-        <h2> hello world </h2>
+        <h2> Login Page </h2>
     )
 }
 
