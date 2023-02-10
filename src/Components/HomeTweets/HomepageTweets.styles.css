@@ -1,0 +1,47 @@
+.tweetDiv{
+    width: 580px;
+    border: 0.6px solid #272727;
+    padding: 10px 16px 10px 16px;
+    display: flex;
+    height: auto;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+.tweetMain{
+    width: 100%;
+    height: auto;
+}
+.tweetHeader{
+    width: auto;
+    height: 20px;
+    display: flex;
+    flex-basis: auto;
+}
+.imgClass{
+    margin-right: 10px;
+    border-radius: 100px;
+}
+.userId{
+    color: #71767B;
+    margin-left: 6px;
+}
+.tweetData{
+    padding-top: 2.5px;
+    color: #E7E9EA;
+    letter-spacing: 0.1px;
+}
+.tweetAnalytics{
+    width: 100%px;
+    height: 32px;
+    display: flex;
+    align-items: flex-end;
+}
+.tweetAnal{
+    width: 10%;
+    color: #71767B;
+    margin-right: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

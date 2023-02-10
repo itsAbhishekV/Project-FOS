@@ -1,10 +1,16 @@
 import React from 'react';
-import './Home.styles.css'
 import Trending from "../../Components/Trending/Trending.Components";
+import HomepageTweets from '../../Components/HomeTweets/HomepageTweets.component';
+import SideNavBar from '../../Components/Navbar/SideNavBar.Component';
+import './Home.styles.css';
 
 const HomePage = () => {
     return (
-        <Trending />
+        <div className = 'HomePage' >
+            <SideNavBar />
+            <HomepageTweets /> 
+            <Trending />
+        </div>
     )
 }
 
