@@ -3,8 +3,8 @@
 }
 
 .thotSearch{
-    height: 53px;
-    width: 330px;
+    height: 33px;
+    width: 300px;
     border: none;
     background-color: #202327;
     box-sizing: border-box;
@@ -21,10 +21,10 @@
 
 .searchicon{
     background-color: #202327;
-    padding: 15px;
+    padding: 8px;
     margin: 5px 0 5px 5px;
-    width: 36px;
-    height: 53px;
+    width: 29px;
+    height: 40px;
     border-radius: 40px 0 0 40px;
 }
 
@@ -35,7 +35,7 @@ input::placeholder{
 }
 
 .trendingsection{
-    width: 366px;
+    width: 329px;
     height: 500px;
     background-color: #202327;
     border-radius: 18px;
