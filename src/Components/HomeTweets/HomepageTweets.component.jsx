@@ -29,9 +29,9 @@ const HomepageTweets = () => {
                                 <span>{data.tweet['data']}</span>
                             </div>
                             <div className='tweetAnalytics'>
-                                <span className='tweetAnal'><FavoriteBorderOutlinedIcon sx = {{ color: '#71767B', height: '16px', width: '20px'}} />{data.tweet['likes']}</span>
-                                <span className='tweetAnal'><ModeCommentOutlinedIcon sx = {{ color: '#71767B', height: '15px', width: '16px'}} />{data.tweet['comments']}</span>
-                                <span className='tweetAnal'><PersonAddOutlinedIcon sx = {{ color: '#71767B', height: '18px', width: '18px'}} /></span>
+                                <span className='tweetAnal like'><FavoriteBorderOutlinedIcon sx = {{ color: '#71767B', height: '16px', width: '20px'}} />{data.tweet['likes']}</span>
+                                <span className='tweetAnal comment'><ModeCommentOutlinedIcon sx = {{ color: '#71767B', height: '15px', width: '16px'}} />{data.tweet['comments']}</span>
+                                <span className='tweetAnal follow'><PersonAddOutlinedIcon sx = {{ color: '#71767B', height: '18px', width: '18px'}} /></span>
                             </div>
                         </div>
                     </div>

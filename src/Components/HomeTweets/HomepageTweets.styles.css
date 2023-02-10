@@ -45,3 +45,11 @@
     align-items: center;
     justify-content: space-evenly;
 }
+.like:hover{
+    color: rgb(186, 47, 47);
+    cursor: pointer;
+}
+.comment:hover{
+    color: rgb(68, 68, 170);
+    cursor: pointer;
+}
