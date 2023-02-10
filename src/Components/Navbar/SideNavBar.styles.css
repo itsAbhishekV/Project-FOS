@@ -1,0 +1,29 @@
+.SideNavBar{
+    width: 20%;
+    height: 100vh;
+}
+.mainTitle{
+    margin-bottom: 22px !important;
+}
+.inlineNav{
+    display: flex;
+    padding: 12px;
+    margin: 0 20px 0 0;
+    margin-left: 70px !important;
+    align-items: center;
+}
+.navHover:hover {
+    border-radius: 13px;
+    background-color: #2e373f;
+}
+li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 12px;
+}
+.MainTitle{
+    font-size: 30px;
+    font-weight: 800;
+    padding: 20px 10px 20px 95px;
+}

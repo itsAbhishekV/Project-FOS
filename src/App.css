@@ -3,6 +3,7 @@ body{
     font-weight: bold;
     user-select: none;
     margin: 10px;
+    color: white;
 }
 a{
     text-decoration: none;
