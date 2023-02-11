@@ -10,7 +10,7 @@ import FOSlogo from '../../Assets/FOS logo.svg'
 const SideNavBar = () => {
     return (
         <div className='SideNavBar'>
-            <Link to = '/'>
+            <Link to = '/' style={{ textDecoration: "none" }}>
                 <span className='inlineNav mainTitle'>
                     <img src = {FOSlogo} alt = '' style={{height: '40px', width: '40px' }}/>
                     <li style={{ fontSize: '23px', fontWeight: '700', color: 'white'}}>FOS</li>
