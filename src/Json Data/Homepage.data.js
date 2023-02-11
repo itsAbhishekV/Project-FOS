@@ -3,6 +3,10 @@ const TestData = [
     {
         userName : 'Abhishek',
         userID : 'dudewthdimple',
+        profileData: {
+            bio : 'just here to post thots',
+            location: 'Karnal, IN'
+        },
         verified: true,
         profilePicture: ProfilePicture,
         tweet: {
@@ -14,6 +18,10 @@ const TestData = [
     {
         userName : 'Akshay Dhiman',
         userID : 'zyixDhiman',
+        profileData: {
+            bio : 'just here to post thots',
+            location: 'Karnal, IN'
+        },
         verified: true,
         profilePicture: ProfilePicture,
         tweet: {
@@ -25,6 +33,10 @@ const TestData = [
     {
         userName : 'Dhruv',
         userID : 'dhruvHizly',
+        profileData: {
+            bio : 'just here to post thots',
+            location: 'Karnal, IN'
+        },
         verified: true,
         profilePicture: ProfilePicture,
         tweet: {
@@ -36,6 +48,10 @@ const TestData = [
     {
         userName : 'Deepesh',
         userID : 'DeepeshDhiman',
+        profileData: {
+            bio : 'just here to post thots',
+            location: 'Karnal, IN'
+        },
         verified: false,
         profilePicture: ProfilePicture,
         tweet: {
@@ -47,6 +63,10 @@ const TestData = [
     {
         userName : 'Sahil Sarda',
         userID : 'SahilSarda10',
+        profileData: {
+            bio : 'just here to post thots',
+            location: 'Karnal, IN'
+        },
         verified: false,
         profilePicture: ProfilePicture,
         tweet: {
@@ -58,6 +78,10 @@ const TestData = [
     {
         userName : 'Jayesh Mundhra',
         userID : 'JayeshMundhra07',
+        profileData: {
+            bio : 'just here to post thots',
+            location: 'Karnal, IN'
+        },
         verified: false,
         profilePicture: ProfilePicture,
         tweet: {
@@ -69,6 +93,10 @@ const TestData = [
     {
         userName : 'Anshul Masand',
         userID : 'anshulMasand_pvt',
+        profileData: {
+            bio : 'just here to post thots',
+            location: 'Karnal, IN'
+        },
         verified: false,
         profilePicture: ProfilePicture,
         tweet: {
@@ -80,6 +108,10 @@ const TestData = [
     {
         userName : 'Bhuvin Singla',
         userID : 'BhuvinSingla_10',
+        profileData: {
+            bio : 'just here to post thots',
+            location: 'Karnal, IN'
+        },
         verified: false,
         profilePicture: ProfilePicture,
         tweet: {
@@ -91,6 +123,10 @@ const TestData = [
     {
         userName : 'Ruchika Dhiman',
         userID : 'Ruchika00789',
+        profileData: {
+            bio : 'just here to post thots',
+            location: 'Karnal, IN'
+        },
         verified: true,
         profilePicture: ProfilePicture,
         tweet: {
@@ -102,6 +138,10 @@ const TestData = [
     {
         userName : 'Mannat Bhatia',
         userID : 'mannatBhatiaaaa',
+        profileData: {
+            bio : 'just here to post thots',
+            location: 'Karnal, IN'
+        },
         verified: true,
         profilePicture: ProfilePicture,
         tweet: {
