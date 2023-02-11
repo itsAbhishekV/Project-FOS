@@ -2,7 +2,6 @@ import React from 'react';
 import './Trending.styles.css'
 import SearchIcon from '@mui/icons-material/Search';
 import testdata from '../../Components/testdata';
-import { margin } from '@mui/system';
 
 const Trending = () => {
     return (
