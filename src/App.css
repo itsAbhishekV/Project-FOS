@@ -2,14 +2,12 @@
     box-sizing: border-box;
 }
 body{
+    height: 100vh;
+    width: 100%;
     font-family: 'Poppins';
     font-weight: bold;
     user-select: none;
     color: white;
-}
-a{
-    text-decoration: none;
-    color: black;
 }
 *{
     box-sizing: border-box;
