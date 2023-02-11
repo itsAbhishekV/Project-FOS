@@ -1,14 +1,23 @@
+.trencont{
+    height: auto;
+    width: 400px;
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .input{
     display: flex;
     top: 0;
     position: sticky;
+    background-color: black;
 }
 
 .thotSearch{
     height: 33px;
     width: 300px;
     border: none;
-    background-color: #202327;
+    background-color: #212427;
     box-sizing: border-box;
     padding: 20px;
     margin: 5px 5px 5px 0px;

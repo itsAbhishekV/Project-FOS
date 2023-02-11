@@ -36,7 +36,9 @@
 .tweetAnalytics{
     width: 100%px;
     height: 32px;
+    font-size: 14px;
     display: flex;
+    font-family: Poppins;
     align-items: flex-end;
 }
 .tweetAnal{
@@ -45,7 +47,7 @@
     margin-right: 90px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .like:hover{

@@ -1,7 +1,12 @@
 body{
-    background-color: #081119;
+    margin: 0;
+    padding: 0;
+    /* background-color: #081119; */
+    background-color: black;
 }
 .HomePage{
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
