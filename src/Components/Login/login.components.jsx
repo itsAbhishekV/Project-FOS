@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './login.styles.css'
 
 const LoginComponent = () => {
     return (
-        <h2> Login Page </h2>
+        <Link className='link' to = "/">
+            <h2> Login Now </h2>
+        </Link>
     )
 }
 
