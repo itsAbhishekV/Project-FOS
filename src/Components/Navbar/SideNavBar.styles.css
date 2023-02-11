@@ -1,6 +1,8 @@
 .SideNavBar{
     width: 20%;
-    height: 100vh;
+    height: 100%;
+    top: 0;
+    position: sticky;
 }
 .mainTitle{
     margin-bottom: 22px !important;
