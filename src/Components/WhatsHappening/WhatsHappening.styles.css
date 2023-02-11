@@ -1,0 +1,96 @@
+.WHcontainer{
+    width: 580px;
+    border: 0.6px solid #272727;
+    padding: 10px 16px 10px 16px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    top: 0;
+    position: sticky;
+    background-color: rgba(39, 39, 39, .1);  
+    backdrop-filter: blur(15px);
+}
+
+.WHfeilds{
+    margin: 5px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.Home{
+    font-size: 20px;
+}
+
+.forYou{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 3px solid #0099FF;
+    border-radius: 4px;
+    transition: 1s;
+}
+
+.forYou:hover{
+    background-color: #272727;
+    border-radius: 10px;
+}
+
+.WHinput{
+    width: 580px;
+    border: 0.6px solid #272727;
+    padding: 10px 16px 10px 16px;
+    display: flex;
+    height: auto;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.pfp{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.WH{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: black;
+    font-size: 16px;
+    resize: none;
+    color:white;
+    padding: 10px;
+    font-size: 25px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.WH::placeholder{
+    color: #71767b;
+    font-size: 25px;
+}
+
+.WH:focus{
+    outline: none;
+}
+
+.newThot{
+    height: 40px;
+    width: 80px;
+    background-color: #0099FF;
+    color: white;
+    font-weight: 800;
+    font-family: sans-serif;
+    font-size: 15px;
+    border-radius: 40px;
+    cursor: pointer;
+    float: right;
+}
+
+.form{
+    width: 85%;
+}
