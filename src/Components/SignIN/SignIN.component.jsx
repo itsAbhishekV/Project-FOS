@@ -1,9 +1,10 @@
 import React from 'react';
+import FormInput from '../FormInput/FormInput.Components';
 import './SignIN.styles.css'
 
 const SignIN = () => {
     return (
-        <h2> SignIN </h2>
+        <FormInput  />
     )
 }
 
