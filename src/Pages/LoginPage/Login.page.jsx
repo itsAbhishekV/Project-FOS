@@ -1,10 +1,14 @@
 import React from 'react';
-import LoginComponent from '../../Components/Login/login.components';
+import SignIN from '../../Components/SignIN/SignIN.component';
+import SignUP from '../../Components/SignUP/SignUP.Components';
 import './Login.styles.css'
 
 const LoginPage = () => {
     return (
-        <LoginComponent/>
+        <div>
+            <SignIN/>
+            <SignUP/>
+        </div>
     )
 }
 
