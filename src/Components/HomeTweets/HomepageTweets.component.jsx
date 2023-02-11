@@ -5,10 +5,12 @@ import Verified from '../../Assets/FOS logo.svg'
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import ModeCommentOutlinedIcon from '@mui/icons-material/ModeCommentOutlined';
 import PersonAddOutlinedIcon from '@mui/icons-material/PersonAddOutlined';
+import WhatsHappening from '../../Components/WhatsHappening/WhatsHappening.components';
 
 const HomepageTweets = () => {
-    return (
+    return ( 
         <div className='HomeTweetComponent'>
+        <WhatsHappening />
             {
                 TestData.map((data, index) => (
                     <div className='tweetDiv' key={index}>

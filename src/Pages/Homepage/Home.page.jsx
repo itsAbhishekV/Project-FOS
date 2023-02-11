@@ -8,7 +8,7 @@ const HomePage = () => {
     return (
         <div className = 'HomePage' >
             <SideNavBar />
-            <HomepageTweets /> 
+            <HomepageTweets />
             <Trending />
         </div>
     )
