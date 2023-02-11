@@ -5,14 +5,14 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import TagRoundedIcon from '@mui/icons-material/TagRounded';
 import Person2RoundedIcon from '@mui/icons-material/Person2Rounded';
 import NewThotIcon from '../../Assets/2246837_new_tweet_write_icon.svg'
-import FOSlogo from '../../Assets/FOS logo.svg'
+import newLogo from '../../Assets/newLogo.png'
 
 const SideNavBar = () => {
     return (
         <div className='SideNavBar'>
             <Link to = '/' style={{ textDecoration: "none" }}>
                 <span className='inlineNav mainTitle'>
-                    <img src = {FOSlogo} alt = '' style={{height: '40px', width: '40px' }}/>
+                    <img src = {newLogo} alt = '' style={{height: '50px', width: '50px' }}/>
                     <li style={{ fontSize: '23px', fontWeight: '700', color: 'white'}}>FOS</li>
                 </span>
             </Link>
