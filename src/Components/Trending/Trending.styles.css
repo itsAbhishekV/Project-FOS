@@ -1,7 +1,16 @@
+.trencont{
+    height: auto;
+    width: 400px;
+    max-width: 420px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .input{
     display: flex;
     top: 0;
     position: sticky;
+    background-color: black;
 }
 
 .thotSearch{

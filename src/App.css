@@ -1,13 +1,10 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 body{
     font-family: 'Poppins';
     font-weight: bold;
     user-select: none;
-    margin: 10px;
     color: white;
 }
 a{
