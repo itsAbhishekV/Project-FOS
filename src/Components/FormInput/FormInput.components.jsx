@@ -1,9 +1,10 @@
 import React from "react";
 import './FormInput.styles.css';
 
-const FormInput = ({handleChange, label, ...otherInputProps}) => (
+const FormInput = ({handleChange, label, ...otherInputProps}) => {
+    return(
     <div className='group'>
-        <input className='form-input' onChange = {handleChange} {...otherInputProps} />
+        <input className='form-input' onChange={handleChange} {...otherInputProps} />
         {
             label ?
                 <label className={`${
@@ -15,6 +16,6 @@ const FormInput = ({handleChange, label, ...otherInputProps}) => (
                 null
         }
     </div>
-)
+)}
 
 export default FormInput;

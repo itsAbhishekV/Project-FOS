@@ -6,7 +6,7 @@ import ProfilePage from './Pages/Profilepage/Profile.page';
 
 import './App.css';
 
-class App extends React.PureComponent{
+class App extends React.Component{
   render(){
     return (
         <div className='App'>
