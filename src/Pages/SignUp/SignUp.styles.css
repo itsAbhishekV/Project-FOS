@@ -1,0 +1,29 @@
+.signuppage{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+.suinput{
+    border: none;
+    height: 40px;
+    width: 400px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background: none;
+    border-bottom: 2px solid rgb(102, 180, 154);
+    transition: 0.4s;
+}
+.suinput:hover{
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgb(102, 180, 154);
+    border-radius: 10px;
+}

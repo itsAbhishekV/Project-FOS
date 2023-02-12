@@ -1,0 +1,114 @@
+.pmid{
+    width: 580px;
+    border: 0.6px solid #272727;
+    padding: 10px 16px 10px 16px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.header{
+    height: auto;
+    width: auto;
+    backdrop-filter: blur(10px);
+    top: 0;
+    position: sticky;
+}
+
+.useridh{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tthots{
+    font-size: 13px;
+    color: #71767b;
+    font-weight: 100;
+}
+
+.mbody{
+    width: auto;
+    height: auto;
+}
+
+.avatar{
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.labelid{
+    margin-left: 18px;
+    height: auto;
+    width: auto;
+}
+
+.userid{
+    font-size: 20px;
+}
+
+.username{
+    font-size: 20px;
+    font-weight: 200;
+    color: #71767b;
+
+}
+
+.ff{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.flabel{
+    font-size: 15px;
+    font-weight: 300;
+    color: #71767b;
+}
+
+.loc{
+    margin-right: 5px;
+}
+
+.locjoi{
+    margin-left: -2px;
+}
+
+.bio{
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.mar{
+    margin: 15px;
+}
+
+.pnavbar{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.6px solid #272727;
+    width: 100%;
+    height: 60px;
+}
+
+.items{
+    font-weight: 200;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.6s;
+    height: 50px;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.items:hover{
+    background-color: #272727;
+}
