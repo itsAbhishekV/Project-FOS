@@ -5,7 +5,6 @@ import { Routes, Route } from 'react-router-dom';
 import ProfilePage from './Pages/Profilepage/Profile.page';
 
 import './App.css';
-import SignUp from './Components/SignUP/SignUP.Components';
 
 class App extends React.Component{
   render(){
@@ -15,7 +14,6 @@ class App extends React.Component{
             <Route path = '/' element = {<HomePage/>} />
             <Route path = '/login' element = {<LoginPage/>}/>
             <Route path = '/profile' element = {<ProfilePage/>}/>
-            <Route path = '/signup' element = {<SignUp/>}/>
           </Routes>
         </div>
     )
