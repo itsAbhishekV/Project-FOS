@@ -1,8 +1,11 @@
 const ProfilePicture = 'https://i.ibb.co/99xYxXw/Unknown-Profile-Picture.jpg';
+const Male = 'Male';
+const Female = 'Female'
 const TestData = [
     {
         userName : 'Abhishek',
         userID : 'dudewthdimple',
+        gender: Male,
         profileData: {
             bio : 'just here to post thots',
             location: 'Karnal, IN'
@@ -16,8 +19,25 @@ const TestData = [
         }
     },
     {
+        userName : 'Mannat Bhatia',
+        userID : 'mannatBhatiaaaa',
+        gender: Female,
+        profileData: {
+            bio : 'just here to post thots',
+            location: 'Karnal, IN'
+        },
+        verified: true,
+        profilePicture: ProfilePicture,
+        tweet: {
+            data: 'the world is a shit place',
+            likes: 10,
+            comments: 10
+        }
+    },
+    {
         userName : 'Akshay Dhiman',
         userID : 'zyixDhiman',
+        gender : Male,
         profileData: {
             bio : 'just here to post thots',
             location: 'Karnal, IN'
@@ -33,6 +53,23 @@ const TestData = [
     {
         userName : 'Dhruv',
         userID : 'dhruvHizly',
+        gender : Male,
+        profileData: {
+            bio : 'just here to post thots',
+            location: 'Karnal, IN'
+        },
+        verified: true,
+        profilePicture: ProfilePicture,
+        tweet: {
+            data: 'the world is a shit place',
+            likes: 10,
+            comments: 10
+        }
+    },
+    {
+        userName : 'Ruchika Dhiman',
+        userID : 'Ruchika00789',
+        gender: Female,
         profileData: {
             bio : 'just here to post thots',
             location: 'Karnal, IN'
@@ -48,6 +85,7 @@ const TestData = [
     {
         userName : 'Deepesh',
         userID : 'DeepeshDhiman',
+        gender : Male,
         profileData: {
             bio : 'just here to post thots',
             location: 'Karnal, IN'
@@ -63,6 +101,7 @@ const TestData = [
     {
         userName : 'Sahil Sarda',
         userID : 'SahilSarda10',
+        gender: Male,
         profileData: {
             bio : 'just here to post thots',
             location: 'Karnal, IN'
@@ -78,6 +117,7 @@ const TestData = [
     {
         userName : 'Jayesh Mundhra',
         userID : 'JayeshMundhra07',
+        gender : Male,
         profileData: {
             bio : 'just here to post thots',
             location: 'Karnal, IN'
@@ -93,6 +133,7 @@ const TestData = [
     {
         userName : 'Anshul Masand',
         userID : 'anshulMasand_pvt',
+        gender : Male,
         profileData: {
             bio : 'just here to post thots',
             location: 'Karnal, IN'
@@ -108,41 +149,12 @@ const TestData = [
     {
         userName : 'Bhuvin Singla',
         userID : 'BhuvinSingla_10',
+        gender : Male,
         profileData: {
             bio : 'just here to post thots',
             location: 'Karnal, IN'
         },
         verified: false,
-        profilePicture: ProfilePicture,
-        tweet: {
-            data: 'the world is a shit place',
-            likes: 10,
-            comments: 10
-        }
-    },
-    {
-        userName : 'Ruchika Dhiman',
-        userID : 'Ruchika00789',
-        profileData: {
-            bio : 'just here to post thots',
-            location: 'Karnal, IN'
-        },
-        verified: true,
-        profilePicture: ProfilePicture,
-        tweet: {
-            data: 'the world is a shit place',
-            likes: 10,
-            comments: 10
-        }
-    },
-    {
-        userName : 'Mannat Bhatia',
-        userID : 'mannatBhatiaaaa',
-        profileData: {
-            bio : 'just here to post thots',
-            location: 'Karnal, IN'
-        },
-        verified: true,
         profilePicture: ProfilePicture,
         tweet: {
             data: 'the world is a shit place',
