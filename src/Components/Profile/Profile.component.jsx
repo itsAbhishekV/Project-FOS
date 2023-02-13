@@ -3,12 +3,20 @@ import test from '../../Json Data/users.data';
 import './profile.styles.css';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import DateRangeIcon from '@mui/icons-material/DateRange';
+import verified from '../../Assets/FOS logo.svg';
+import { height, width } from "@mui/system";
 
 function Profile() {
     return (
         <div className="pmid">
             <div className="header">
-                <div className="useridh">{test.userid}</div>
+                <span className="useridh">{test.userid}
+                {
+                    (test.verified) ? <span>
+                            <img src={verified} alt='' style={{height: "20px", width: '20px', marginLeft: '10px', marginTop: '4px'}} /> 
+                        </span>: <span></span>
+                }
+                </span>
                 <div className="tthots">{test.thots.length} Thots</div>
                 <hr style={{width: "100%"}} />
             </div>
@@ -53,6 +61,7 @@ function Profile() {
                     Likes
                 </button>
             </div>
+            
         </div>
     )
 }

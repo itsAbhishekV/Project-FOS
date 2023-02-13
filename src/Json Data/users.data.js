@@ -9,6 +9,7 @@ const users = {
         bio: "A wild dhruv has appeared on fos",
         city: "New Delhi",
         country: "India",
+        verified: true,
         joiningDate: "November 2020",
         followers: [0, 1, 2, 3, 4],
         following: [0, 1, 2, 3, 4],
@@ -16,10 +17,13 @@ const users = {
         likes: [0, 1, 2, 3],
         comments: [
             {
-                0: ["This is a wild comment", "This is another wild comment."]
+                0: ["This is a wild comment"]
             },
             {
                 1: ["this is a comment by 1"]
+            },
+            {
+                0: ["this is another wild comment"]
             }
         ]
     }
