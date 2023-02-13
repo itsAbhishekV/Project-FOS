@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import test from '../../Json Data/users.data';
 import './profile.styles.css';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import verified from '../../Assets/FOS logo.svg';
 import { height, width } from "@mui/system";
+import ProfileThots from "../profileThots/profileThots.component";
+import ProfileTAR from "..//profileTAR/profileTAR.component"
+import ProfileLikes from "..//profileLikes/profileLikes.component"
 
 function Profile() {
+
+    const [currentComponent, setCurrentComponent] = useState("component1");
+
+    const handleClick = (component) => {
+        setCurrentComponent(component);
+    }
+
     return (
         <div className="pmid">
             <div className="header">
@@ -51,17 +61,27 @@ function Profile() {
             </div>
             <br />
             <div className="pnavbar">
-                <button className="items">
+                <button className="items" onClick={()=>(handleClick("component1"))}>
                     Thots
                 </button>
-                <button className="items">
+                <button className="items" onClick={()=>{handleClick("component2")}}>
                     Thots and replies
                 </button>
-                <button className="items">
+                <button className="items" onClick={()=>{handleClick("component3")}}>
                     Likes
                 </button>
             </div>
-            
+            <div>
+                {
+                    (currentComponent === "component1" && <ProfileThots />)
+                }
+                {
+                    (currentComponent === "component2" && <ProfileTAR />)
+                }
+                {
+                    (currentComponent === "component3" && <ProfileLikes />)
+                }
+            </div>
         </div>
     )
 }
