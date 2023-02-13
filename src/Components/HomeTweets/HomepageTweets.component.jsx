@@ -6,6 +6,8 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import ModeCommentOutlinedIcon from '@mui/icons-material/ModeCommentOutlined';
 import PersonAddOutlinedIcon from '@mui/icons-material/PersonAddOutlined';
 import WhatsHappening from '../../Components/WhatsHappening/WhatsHappening.components';
+import MaleAvatar from '../../Assets/Male Avatar.svg'
+import FemaleAvatar from '../../Assets/Female Avatar.svg'
 
 const HomepageTweets = () => {
     return ( 
@@ -15,7 +17,9 @@ const HomepageTweets = () => {
                 TestData.map((data, index) => (
                     <div className='tweetDiv' key={index}>
                         <div className='imgClass'>
-                            <img  style = {{ height: '48px', width: '48px' }} src = {data.profilePicture} alt = ''/>
+                            {
+                                data.gender === "Male" ? (<img  style = {{ height: '48px', width: '48px' }} src = {MaleAvatar} alt = ''/>) : (<img  style = {{ height: '48px', width: '48px' }} src = {FemaleAvatar} alt = ''/>)
+                            }
                         </div>
                         <div className='tweetMain'>
                             <div className='tweetHeader'>
