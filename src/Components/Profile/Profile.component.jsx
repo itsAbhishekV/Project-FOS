@@ -73,6 +73,9 @@ function Profile() {
             </div>
             <div>
                 {
+                    (currentComponent === "component1" && <ProfileThots />)
+                }
+                {
                     (currentComponent === "component2" && <ProfileTAR />)
                 }
                 {
