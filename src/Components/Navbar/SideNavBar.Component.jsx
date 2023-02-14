@@ -16,18 +16,24 @@ const SideNavBar = () => {
                     <li style={{ fontSize: '23px', fontWeight: '700', color: 'white'}}>FOS</li>
                 </span>
             </Link>
+            <Link to='/' style={{ textDecoration: "none", color: "white" }}>
             <span className='inlineNav navHover'>
                 <HomeRoundedIcon fontSize='large' sx = {{ color: 'white' }}/>
                 <li>Home</li>
             </span>
+            </Link>
+            <Link to="/trending" style={{ textDecoration: "none", color: "white" }}>
             <span className='inlineNav navHover'>
                 <TagRoundedIcon fontSize='large' sx = {{ color: 'white' }}/>
                 <li>Trending</li>
             </span>
+            </Link>
+            <Link to="/profile" style={{ textDecoration: "none", color: "white" }}>
             <span className='inlineNav navHover'>
                 <Person2RoundedIcon fontSize='large' sx = {{ color: 'white' }}/>
                 <li>Profile</li>
             </span>
+            </Link>
             <span className='inlineNav navHover'>
                 <img src = {NewThotIcon} alt = '' style={{ backgroundColor: 'aqua', height: '35px', width: '35px' }} />
                 <li>New Thot</li>
