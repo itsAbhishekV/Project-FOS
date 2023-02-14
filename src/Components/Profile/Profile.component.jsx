@@ -5,6 +5,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import verified from '../../Assets/FOS logo.svg';
 import { height, width } from "@mui/system";
+import ProfileThots from "../profileThot/profileThot.component";
 import ProfileTAR from "..//profileTAR/profileTAR.component"
 import ProfileLikes from "..//profileLikes/profileLikes.component"
 
