@@ -6,6 +6,7 @@ import TagRoundedIcon from '@mui/icons-material/TagRounded';
 import Person2RoundedIcon from '@mui/icons-material/Person2Rounded';
 import NewThotIcon from '../../Assets/2246837_new_tweet_write_icon.svg'
 import newLogo from '../../Assets/newLogo.png'
+import EmailIcon from '@mui/icons-material/Email';
 
 const SideNavBar = () => {
     return (
@@ -26,6 +27,12 @@ const SideNavBar = () => {
             <span className='inlineNav navHover'>
                 <TagRoundedIcon fontSize='large' sx = {{ color: 'white' }}/>
                 <li>Trending</li>
+            </span>
+            </Link>
+            <Link to="/messages" style={{ textDecoration: "none", color: "white" }}>
+            <span className='inlineNav navHover'>
+                <EmailIcon fontSize='large' sx = {{ color: 'white', height: "30px", width: "30px", marginLeft: "2px" }}/>
+                <li style={{marginLeft: "16px"}}>Messages</li>
             </span>
             </Link>
             <Link to="/profile" style={{ textDecoration: "none", color: "white" }}>
