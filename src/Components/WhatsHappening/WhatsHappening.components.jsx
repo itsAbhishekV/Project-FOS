@@ -10,7 +10,7 @@ const WhatsHappening = () => {
             </div>
             <div className='WHinput'>
                 <div className='pfp'>
-                    <img className='pfp' src='https://i.ibb.co/99xYxXw/Unknown-Profile-Picture.jpg' />
+                    <img className='pfp' src='https://i.ibb.co/99xYxXw/Unknown-Profile-Picture.jpg' alt = 'profile_WhatsHappening'/>
                 </div>
                 <form action='' method='post' className='form'>
                     <textarea type='text' className='WH' name="whatsHappening" placeholder="What's happening?" maxLength="280" />
