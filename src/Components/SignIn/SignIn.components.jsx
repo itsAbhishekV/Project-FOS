@@ -16,7 +16,7 @@ class SignIn extends React.Component{
     handleChange = (event) => {
         const { name, value } = event.target;
         this.setState({[name]: value})
-    }
+    } 
 
     render() {
         return(
@@ -43,7 +43,7 @@ class SignIn extends React.Component{
                     />
                     <div className='buttons'>
                         <CustomButton type='submit'> Sign in </CustomButton>
-                        <CustomButton onclick = {signInWithGoogle} isGoogleSignIn>
+                        <CustomButton onClick = {signInWithGoogle} isGoogleSignIn>
                             Sign in with Google
                         </CustomButton>
                     </div>
