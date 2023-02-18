@@ -8,8 +8,8 @@ import CreateAccountPage from './Pages/CreateAccountPage/CreateAccount.page';
 
 import './App.css';
 
-class App extends React.Component{
-  render(){
+const App = () => {
+
     return (
         <div className='App'>
           <Routes>
@@ -20,7 +20,6 @@ class App extends React.Component{
           </Routes>
         </div>
     )
-  }
 }
 
 export default App;

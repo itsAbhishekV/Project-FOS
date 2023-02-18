@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SideNavBar.styles.css';
 import { Link } from 'react-router-dom';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
@@ -9,6 +9,9 @@ import newLogo from '../../Assets/newLogo.png'
 import EmailIcon from '@mui/icons-material/Email';
 
 const SideNavBar = () => {
+
+    const [show, setShow] = useState(false);
+
     return (
         <div className='SideNavBar'>
             <Link to = '/' style={{ textDecoration: "none" }}>
