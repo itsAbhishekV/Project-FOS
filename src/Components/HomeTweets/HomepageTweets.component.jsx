@@ -26,7 +26,7 @@ const HomepageTweets = () => {
                                 <span className='userName'>{data.userName}</span>
                                 {
                                     data.verified ? <span className='verified'>
-                                        <img src={Verified} style = {{ height: '16px', width: '16px', 'margin-left': '8px'}}alt = ''/>
+                                        <img src={Verified} style = {{ height: '16px', width: '16px', 'marginLeft': '8px'}}alt = ''/>
                                     </span> : null
                                 }
                                 <span className='userId'>@{data.userID}</span>
