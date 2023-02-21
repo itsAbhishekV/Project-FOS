@@ -7,6 +7,8 @@ import Person2RoundedIcon from '@mui/icons-material/Person2Rounded';
 import NewThotIcon from '../../Assets/2246837_new_tweet_write_icon.svg'
 import newLogo from '../../Assets/newLogo.png'
 import EmailIcon from '@mui/icons-material/Email';
+import { auth } from '../../Firebase/firebase.util';
+import UserSignOut from '../../Functions/SignOut';
 
 const SideNavBar = () => {
     return (
@@ -44,6 +46,10 @@ const SideNavBar = () => {
             <span className='inlineNav navHover'>
                 <img src = {NewThotIcon} alt = '' style={{ backgroundColor: 'aqua', height: '35px', width: '35px' }} />
                 <li>New Thot</li>
+            </span>
+
+            <span className='inlineNav navHover'>
+                <button onClick={UserSignOut}> SIGN OUT OF @{auth.currentUser.displayName} </button>
             </span>
         </div>
     )

@@ -12,23 +12,24 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      loggedIn: false
+      loggedIn: false,
+      user: null
     }
   }
 
   componentDidMount() {
-    auth.onAuthStateChanged(user => {
+    auth.onAuthStateChanged((user) => {
       if (user) {
-        this.setState({ loggedIn: true });
-        console.log(auth.currentUser.displayName)
+        this.setState({ loggedIn: true, user });
       } else {
-        this.setState({ loggedIn: false });
-        console.log('false')
+        this.setState({ loggedIn: false, user: null });
       }
     });
   }
 
   render(){
+    console.log(this.state)
+    console.log(this.state.user)
     return (
         <div className='App'>
           <Routes>
