@@ -6,7 +6,9 @@ import TagRoundedIcon from '@mui/icons-material/TagRounded';
 import Person2RoundedIcon from '@mui/icons-material/Person2Rounded';
 import NewThotIcon from '../../Assets/2246837_new_tweet_write_icon.svg'
 import newLogo from '../../Assets/newLogo.png'
-import EmailIcon from '@mui/icons-material/Email';
+import EmailIcon from '@mui/icons-material/Email'
+import { auth } from '../../Firebase/firebase.util';
+import UserSignOut from '../../Functions/SignOut';
 import Modal from 'react-overlays/Modal';
 import styled from '@emotion/styled';
 import maleavatar from '../../Assets/Male Avatar.svg';
@@ -81,6 +83,10 @@ const SideNavBar = () => {
             <span className='inlineNav navHover' onClick={()=>{setShow(true)}}>
                 <img src = {NewThotIcon} alt = '' style={{ backgroundColor: 'aqua', height: '35px', width: '35px' }} />
                 <li>New Thot</li>
+            </span>
+
+            <span className='inlineNav navHover'>
+                <button onClick={UserSignOut}> SIGN OUT OF @{auth.currentUser.displayName} </button>
             </span>
         </div>
         <RandomlyPositionedModal show={show} onHide={()=>setShow(false)} renderBackdrop={renderBackdrop} autoFocus={show}> 
