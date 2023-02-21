@@ -3,7 +3,7 @@ import './WhatsHappening.styles.css'
 
 const WhatsHappening = () => {
     return (
-        <div>
+        <>
             <div className='WHcontainer'>
                 <div className='WHfeilds Home'>Home</div>
                 <div className='WHfeilds forYou'>For You</div>
@@ -18,7 +18,7 @@ const WhatsHappening = () => {
                     <input type='submit' value="Thot" className="newThot" />
                 </form>
             </div>
-        </div>
+        </>
     )
 }
 

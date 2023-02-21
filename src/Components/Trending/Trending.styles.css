@@ -6,10 +6,12 @@
     align-items: center;
     flex-direction: column;
 }
+
 .input{
     display: flex;
     top: 0;
     position: sticky;
+    z-index: 1;
     background-color: black;
 }
 
@@ -56,6 +58,9 @@ input::placeholder{
     margin-left: 4px;
     padding: 10px;
     color: white;
+    top: 63px;
+    position: sticky;
+    z-index: 0;
 }
 
 .trendingheader{

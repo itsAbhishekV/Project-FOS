@@ -6,7 +6,6 @@ import ProfilePage from './Pages/Profilepage/Profile.page';
 import CreateAccountPage from './Pages/CreateAccountPage/CreateAccount.page';
 import { auth } from './Firebase/firebase.util';
 import { Navigate } from 'react-router-dom';
-
 import './App.css';
 class App extends React.Component{
   constructor(props){

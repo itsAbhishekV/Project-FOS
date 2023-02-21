@@ -61,11 +61,10 @@
     border: none;
     border-radius: 4px;
     background-color: black;
-    font-size: 16px;
+    font-size: 20px;
     resize: none;
     color:white;
     padding: 10px;
-    font-size: 20px;
     height: 80px;
     overflow: hidden;
 }
