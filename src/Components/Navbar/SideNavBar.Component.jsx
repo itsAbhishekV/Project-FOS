@@ -3,7 +3,6 @@ import './SideNavBar.styles.css';
 import { Link } from 'react-router-dom';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import TagRoundedIcon from '@mui/icons-material/TagRounded';
-import { auth } from '../../Firebase/firebase.util';
 import UserSignOut from '../../Functions/SignOut';
 import Person2RoundedIcon from '@mui/icons-material/Person2Rounded';
 import NewThotIcon from '../../Assets/2246837_new_tweet_write_icon.svg'
