@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
+const signuproute = require('./routes/signuproute');
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(express.static("public"));
@@ -12,7 +13,7 @@ app.use(session({
     resave: false,
     cookie: {maxAge: 80000}
 }));
-
+app.use("/signup", signuproute);
 
 
 app.listen(3001, ()=>{
