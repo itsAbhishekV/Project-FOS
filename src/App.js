@@ -9,14 +9,19 @@ import { auth } from './Firebase/firebase.util';
 import './App.css';
 
 class App extends React.Component{
-
+  constructor(props){
+    super(props);
+    this.state = {
+        user: null
+    }
+}
   unsubscribeFromAuth = null
 
   componentDidMount(){
 
     this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
       if(user){
-        console.log(user)
+        this.setState({user: user})
       }
       else(
         console.log('not logged in')
@@ -30,13 +35,14 @@ class App extends React.Component{
 }
 
   render() {
+    console.log(this.state.user)
     return (
         <div className='App'>
           <Routes>
             <Route exact path = '/' element = {<HomePage/>} />
             <Route exact path = '/profile' element = {<ProfilePage/>} />
             <Route exact path = '/createAccount' element = {<CreateAccountPage/>} />
-            <Route exact path = '/login' element = {auth.currentUser ? <Navigate to = '/' /> : <LoginPage/>} />
+            <Route exact path = '/login' element = {this.state.user ? <Navigate to = '/' /> : <LoginPage/>} />
           </Routes>
         </div>
     )
