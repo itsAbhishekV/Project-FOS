@@ -7,7 +7,7 @@ const Trending = () => {
     return (
         <div className='trencont'>
             <div className='input'>
-                <label className='searchicon' for="mainsearch">
+                <label className='searchicon' htmlFor="mainsearch">
                     <SearchIcon sx={{color: '#71767b'}} />
                 </label>
                 <input className='thotSearch' name="mainSearch" id="mainsearch" type='text' placeholder="Search FOS..."></input>
@@ -15,9 +15,9 @@ const Trending = () => {
             <div className='trendingsection'>
                 <h2 className='trendingheader'>What's happening</h2>
                 {
-                    testdata.map(element => {
+                    testdata.map((element, key) => {
                         return (
-                            <div className='trendiv'>
+                            <div className='trendiv' key={key}>
                                 <span style={{color: 'gray', fontSize: "13px"}}>Trending</span>
                                 <span>{element.hashtag}</span>
                                 <span style={{color: 'gray', fontSize: "13px"}}>{element.posts.length} thots</span>
@@ -28,9 +28,6 @@ const Trending = () => {
                 <div className='showmore'>
                     <span className="trendiv" style={{color: "#0099ff"}}>Show more</span>
                 </div>
-            </div>
-            <div>
-
             </div>
         </div>
     )
