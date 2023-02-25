@@ -4,7 +4,7 @@ import './SignUp.styles.css'
 import Calendar from 'react-calendar';
 import CustomButton from '../../Components/CustomButton/CustomButton.components'
 import 'react-calendar/dist/Calendar.css';
-import { Today } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
 class SignUp extends React.Component{
     constructor(props){
         super(props);
@@ -46,7 +46,7 @@ class SignUp extends React.Component{
                 <form onSubmit={this.handleSubmit} className='create-account'>
                     <div className='sign-up-form'>
                         <h2>Don't have an account?</h2>
-                        <span>Sign up now!!</span>
+                        <span className='text'>Sign up now!!</span>
                         <FormInput
                             type='text'
                             name='fullName'
@@ -89,8 +89,10 @@ class SignUp extends React.Component{
                         />
                     </div>
                     <div className='account-details'>
+                        <span className='text' >Please pick your date of birth</span>
                         <Calendar onChange={this.handleDateChange} maxDate = {maxDate} value = {this.state.selectedDate} />
-                        <CustomButton type = 'submit' >SIGN UP</CustomButton>
+                        <CustomButton type = 'submit' >SIGN UP</CustomButton>          
+                        <span className='text' >Already Have an account? <Link to = '/login'>Login Now</Link></span>
                     </div>
                 </form>
             </div>
