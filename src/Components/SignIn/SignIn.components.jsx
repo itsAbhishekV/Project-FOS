@@ -3,6 +3,7 @@ import FormInput from '../FormInput/FormInput.components';
 import CustomButton from '../CustomButton/CustomButton.components';
 import signInWithGoogle from '../../Firebase/firebase.util';
 import './SignIn.styles.css';
+import { Link } from 'react-router-dom';
 
 class SignIn extends React.Component{
     constructor(props){
@@ -22,7 +23,7 @@ class SignIn extends React.Component{
         return(
             <div className='SignIn'>
                 <h2>Already have an account?</h2>
-                <span>Sign in with your email and password</span>
+                <span className='text' >Sign in with your email and password</span>
 
                 <form>
                     <FormInput
@@ -47,6 +48,8 @@ class SignIn extends React.Component{
                             Sign in with Google
                         </CustomButton>
                     </div>
+                    <br/>
+                    <span className='text' >Don't Have An Account? <Link to = '/createAccount'>Create Now</Link></span>
                 </form>
             </div>
         )
