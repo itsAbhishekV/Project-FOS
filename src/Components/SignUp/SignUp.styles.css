@@ -28,9 +28,9 @@ h2{
 }
 .account-details{
     width: 360px;
-    height: 470px;
+    height: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 35px;
 }
