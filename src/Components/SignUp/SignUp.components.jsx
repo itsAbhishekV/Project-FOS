@@ -23,7 +23,7 @@ class SignUp extends React.Component{
         this.setState({[name]: value})
     }
 
-    handleSubmit = (event) => {
+    handleSubmit = async (event) => {
         event.preventDefault();
         //console.log(this.state)
 
@@ -35,7 +35,7 @@ class SignUp extends React.Component{
         }
 
         let obj = this.state;
-        fetch('/signup', {
+        await fetch('/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

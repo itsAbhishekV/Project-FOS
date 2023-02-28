@@ -18,6 +18,19 @@ class SignIn extends React.Component{
         this.setState({[name]: value})
     } 
 
+    handleSubmit = () => {
+        fetch('/login',{
+            method: 'POST',
+            headers:{
+                'Content-Type': "application/json"
+            },
+            body: JSON.stringify(this.state)
+        })
+        .then(response=>response.json())
+        .then(data=>console.log(data))
+        .catch(err=>console.log(err));
+    }
+
     render() {
         return(
             <div className='SignIn'>
@@ -42,7 +55,7 @@ class SignIn extends React.Component{
                         required
                     />
                     <div className='buttons'>
-                        <CustomButton type='submit'> Sign in </CustomButton>
+                        <CustomButton type='submit' onClick={this.handleSubmit}> Sign in </CustomButton>
                         <CustomButton onClick = {signInWithGoogle} isGoogleSignIn>
                             Sign in with Google
                         </CustomButton>

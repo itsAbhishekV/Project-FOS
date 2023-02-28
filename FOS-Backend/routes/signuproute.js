@@ -1,14 +1,16 @@
 const express = require("express");
 const routes = express.Router();
-const mongodb = require('mongodb').MongoClient;
-let dbinstance;
-mongodb.connect('mongodb+srv://dhruv:dhruv@cluster0.10txfn8.mongodb.net/?retryWrites=true&w=majority').then(db=>{
-    dbinstance = db.db('project-fos');
-    console.log("Database connected!!!");
-}).catch(err=>console.log(err));
+const db  = require('../mongo');
 
 routes.route("/").post((req, res)=>{
     let obj = req.body;
+    obj.followers = JSON.stringify([]);
+    obj.following = JSON.stringify([]);
+    obj.tweets = JSON.stringify([]);
+    obj.likes = JSON.stringify([]);
+    obj.comments = JSON.stringify([]);
+    
+    let dbinstance = db.getDb();
     dbinstance.collection("users").insertOne(obj);
 });
 
