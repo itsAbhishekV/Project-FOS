@@ -25,7 +25,7 @@ class SignUp extends React.Component{
 
     handleSubmit = (event) => {
         event.preventDefault();
-        //console.log(this.state)
+        console.log(this.state)
 
         const {password, confirmPassword} = this.state;
 
@@ -34,17 +34,18 @@ class SignUp extends React.Component{
             return;
         }
 
-        let obj = this.state;
-        fetch('/signup', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(obj)
-        })
-        .then(response=>response.json())
-        .then(data=>console.log('success: ' + data))
-        .catch(err=>console.log(err))
+    //     let obj = this.state;
+    //     fetch('/signup', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify(obj)
+    //     })
+    //     .then(response=>response.json())
+    //     .then(data=>console.log('success: ' + data))
+    //     .catch(err=>console.log(err))
+    // 
     }
 
     handleDateChange = (event) => {
